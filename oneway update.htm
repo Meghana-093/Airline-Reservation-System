@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body bgcolor="#1E90FF">
+<button onclick="goBack()">Go Back</button>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+
+ <form action="oneway update.php"  metod="post"><br/><br/>
+
+<p>Enter the details to update the flight details</p>
+<label for="Flight No:">Flight No:</label>
+	<input type="number" id="FLIGHT_NO" name="FLIGHT_NO" placeholder="enter flight no" required><br/><br/>
+<label for="Flight Name">Aeroplane Name:</label>
+	<select id="FLIGHT_NAME" name="FLIGHT_NAME" required>
+	<option value="----Select-----">----------------------------Select----------------------------------</option>
+	<option value="Airbus">Airbus</option>
+	<option value="Boeing">Boeing </option>
+	<option value="Emirates">Emirates</option>
+	</select><br/><br/>
+<label for="Departure time">Departure time</label>
+         <input type="time" id="DEPART_TIME" name="DEPART_TIME" required> <br/><br/>
+<label for="Departure date">Departure date</label>
+         <input type="date" id="FROM_DATE" name="FROM_DATE" required> <br/><br/>
+<label for ="from">Departure Airport</label>
+	<select id="DEPART_AIRPORT" name="DEPART_AIRPORT" required >
+	<option value="----Select-----">----------------------------Select----------------------------------</option>
+	<option value="Indira Gandhi International airport">Indira Gandhi International airport,Delhi,India</option>
+	<option value="Kempegowda International airport">Kempegowda International airport,Banglore,India</option>
+<option value="Dharbanga Airport">Dharbanga Airport</option>
+<option value="Jashpur Airport">Jashpur Airport</option>
+<option value="Swami Vivekananda Airport">Swami Vivekananda Airport</option>
+<option value="Cochin International">Cochin International airport</option>
+<option value="Sardar Vallabai Patel International">Sardar Vallabai Patel International airport</option>
+<option value="Manglore International">Manglore International airport</option>
+<option value="Imphal International">Imphal International airport</option>
+	</select><br/><br/>
+	
+
+	<label for ="from">Arrival Airport</label>
+	<select id="TO_AIRPORT" name="TO_AIRPORT" required>
+	<option value="----Select-----">----------------------------Select----------------------------------</option>
+	<option value="Indira Gandhi International airport">Indira Gandhi International airport,Delhi,India</option>
+	<option value="Kempegowda International airport">Kempegowda International airport,Banglore,India</option>
+<option value="Dharbanga Airport">Dharbanga Airport</option>
+<option value="Jashpur Airport">Jashpur Airport</option>
+<option value="Swami Vivekananda Airport">Swami Vivekananda Airport</option>
+<option value="Cochin International">Cochin International airport</option>
+<option value="Sardar Vallabai Patel International">Sardar Vallabai Patel International airport</option>
+<option value="Manglore International">Manglore International airport</option>
+<option value="Imphal International">Imphal International airport</option>
+	</select><br/><br/>
+<label for="ecapacity">Economy Capacity:</label>
+	<input type="number" id="E_CAPACITY" name="E_CAPACITY" placeholder="enter economy capacity" required><br/><br/>
+<label for="eprice">Economy price:</label>
+	<input type="number" id="eprice" name="eprice" placeholder="enter economy price" required><br/><br/>
+
+<label for="bcapacity">Buisness Capacity:</label>
+	<input type="number" id="B_CAPACITY" name="B_CAPACITY" placeholder="enter buisness capacity" required><br/><br/>
+<label for="bprice ">Buisness price:</label>
+	<input type="number" id="bprice" name="bprice" placeholder="enter buisness price" required><br/><br/>
+
+
+<input type="submit" value="Update">
+
+</form>
+</body>
+</html>
+
+

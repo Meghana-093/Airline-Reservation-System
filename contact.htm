@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=text], select, textarea {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: horizontal;
+}
+input[type=email],select,textarea{
+width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:#4CAF50;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #1E90FF;
+}
+
+</style>
+</head>
+<body bgcolor="#1E90FF" >
+<form >
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" autofocus placeholder="enter first name"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="enter last name"><br><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" placeholder="Enter email"><br><br>
+  <label for="subject" >Message:</label><br>
+  <textarea id="subject" name="subject" placeholder="Type your message...." style="height:150px"></textarea>
+  <br><br>
+  <input type="submit" value="Send message">
+</form>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  padding: 16px;
+  background-color:#1E90FF;
+}
+</style>
+</head>
+<body bgcolor="#1E90FF">
+<button onclick="goBack()">Go Back</button>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+ <form action="oneway bookings.php"  metod="post"><br/><br/>
+<h1><u>Book Oneway Flights</u></h1>
+<p1><b>Note:Search flights before booking flights<b/></p1><br/><br/>
+<label for="User name">UserName</label>
+    <input type="text" placeholder="Enter User name" name="UName" id="UName"  required> <br/><br/>
+<label for="Flight No:">Flight No:</label>
+	<input type="number" id="FLIGHT_NO" name="FLIGHT_NO" placeholder="enter flight no" required><br/><br/> 
+
+ <label for="ClassName">ClassName</label><br/>
+	
+	<input type="radio" id="CLASS_NAME" name="CLASS_NAME" value="Business">
+  <label for="B_CAPACITY">Business</label><br>
+  <input type="radio" id="CLASS_NAME" name="CLASS_NAME" value="Economy">
+  <label for="E_CAPACITY">Economy</label><br><br/>
+       <label for="flight type">Flight Type</label>
+	<select id="FLIGHT_TYPE" name="FLIGHT_TYPE">
+	<option value="----Select-----">----------------------------Select----------------------------------</option>
+	<option value="Oneway">Oneway </option>
+	
+	</select><br/><br/>
+	<input type="submit" value="Book flight"><br/>
+	
+</form>
+</body>
+</html>
+
+

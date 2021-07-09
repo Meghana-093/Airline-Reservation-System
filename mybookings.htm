@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body bgcolor="#1E90FF" >
+
+<form action="mybookings.php" method="post">
+  <div class="container">
+	<button onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+<p>Enter username to get booking details.</p>
+
+<label for="User name"><b>UserName</b></label><br/><br/>
+<input type="text" placeholder="Enter User name" name="UName" id="UName" required><br/><br/>
+
+<input type="submit" value="Submit">
+
+</form>
+</body>
+</head>
+</html>

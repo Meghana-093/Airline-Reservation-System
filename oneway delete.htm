@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body bgcolor="#1E90FF">
+<button onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+ <form action="oneway delete.php"  metod="post"><br/><br/>
+
+<p>Enter the flight no to delete</p>
+<label for="Flight No:">Flight No:</label>
+	<input type="number" id="FLIGHT_NO" name="FLIGHT_NO" placeholder="enter flight no" required><br/><br/>
+
+
+<input type="submit" value="Delete">
+
+</form>
+</body>
+</html>

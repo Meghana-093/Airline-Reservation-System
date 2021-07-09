@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body bgcolor="#1E90FF">
+<button onclick="goBack()">Go Back</button>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+<h3>Search Twoway flights</h3>
+ <form action=" twoway search.php"  metod="post"><br/><br/>
+
+
+<label for="Departure date">Departure date</label>
+         <input type="date" id="FROM_DATE" name="FROM_DATE" required> <br/><br/>
+<label for="Departure date">Arrival Date</label>
+         <input type="date" id="TO_DATE" name="TO_DATE" required> <br/><br/>
+<label for ="from">Departure Airport</label>
+	<select id="DEPART_AIRPORT" name="DEPART_AIRPORT" required >
+	<option value="----Select-----">----------------------------Select----------------------------------</option>
+	<option value="Indira Gandhi International airport">Indira Gandhi International airport</option>
+	<option value="Kempegowda International airport">Kempegowda International airport</option>
+<option value="Dharbanga Airport">Dharbanga Airport</option>
+<option value="Jashpur Airport">Jashpur Airport</option>
+<option value="Swami Vivekananda Airport">Swami Vivekananda Airport</option>
+<option value="Cochin International">Cochin International airport</option>
+<option value="Sardar Vallabai Patel International">Sardar Vallabai Patel International airport</option>
+<option value="Manglore International">Manglore International airport</option>
+<option value="Imphal International">Imphal International airport</option>
+	</select><br/><br/>
+	
+
+	<label for ="from">Arrival Airport</label>
+	<select id="TO_AIRPORT" name="TO_AIRPORT" required>
+	<option value="----Select-----">----------------------------Select----------------------------------</option>
+	<option value="Indira Gandhi International airport">Indira Gandhi International airport</option>
+	<option value="Kempegowda International airport">Kempegowda International airport</option>
+<option value="Dharbanga Airport">Dharbanga Airport</option>
+<option value="Jashpur Airport">Jashpur Airport</option>
+<option value="Swami Vivekananda Airport">Swami Vivekananda Airport</option>
+<option value="Cochin International">Cochin International airport</option>
+<option value="Sardar Vallabai Patel International">Sardar Vallabai Patel International airport</option>
+<option value="Manglore International">Manglore International airport</option>
+<option value="Imphal International">Imphal International airport</option>
+	</select><br/><br/>
+       <label for="ClassName">ClassName</label><br/>
+	
+	<input type="radio" id="CLASS_NAME" name="CLASS_NAME" value="Business">
+  <label for="B_CAPACITY">Business</label><br>
+  <input type="radio" id="CLASS_NAME" name="CLASS_NAME" value="Economy">
+  <label for="E_CAPACITY">Economy</label><br><br/>
+  
+	<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
